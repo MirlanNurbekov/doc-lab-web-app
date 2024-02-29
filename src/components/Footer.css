@@ -1,0 +1,74 @@
+.footer {
+  background-image: url('../assets/img/footer_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  color: white;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    padding: 2rem 4rem;
+  }
+}
+
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem; /* Increase this value to move "DOCLAB" and the text under it lower */
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #a8dadc; /* Change hover color as needed */
+}
+
+.footer-image {
+  width: 100%;
+  max-width: 600px; /* Adjust based on your preference */
+  transition: transform 0.3s ease; /* Animation for hover */
+}
+
+.footer-image:hover {
+  transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.footer-bottom-text {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  margin-top: 2rem; /* Adjust the bottom text positioning */
+}
+
+.flag-foooter {
+  width: 100%; /* Adjust this as needed to control the size */
+  max-width: 800px; /* Sets the maximum width to make the image larger */
+  height: 350px;
+  border-radius: 15px !important;
+  margin: 0 auto; /* Centers the image in its container */
+  padding: 20px; /* Adds some space around the image */
+  z-index: 20;
+}

@@ -1,0 +1,73 @@
+/* navbar.css */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  color: white;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  margin-top: 4px; /* Space above each flag */
+  margin-bottom: 4px; /* Space below each flag */
+  margin-right: 4px; /* Space to the right of each flag */
+  margin-left: 4px; /* Space to the left of each flag */
+}
+
+.flags-dropdown-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position below the flag button */
+  left: 50%; /* Center under the flag button */
+  transform: translateX(-50%); /* Adjust for true center alignment */
+  background-color: #fff;
+  z-index: 20;
+  padding: 0px; /* Add padding around the content */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden; /* Ensure no overflow */
+  min-width: 45px; /* Adjust minimum width as needed */
+  display: flex; /* Enable flex layout */
+  flex-direction: column; /* Stack flags in a column */
+  gap: 3px; /* Space between flags */
+}
+
+.flag {
+  margin: 4px auto; /* Center flags horizontally with automatic margins and add space */
+  cursor: pointer;
+  display: block; /* Ensure flags are treated as block elements for margin to take effect */
+}
+
+/* Navbar.css */
+.login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 100;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-modal button {
+  margin-top: 10px;
+}
